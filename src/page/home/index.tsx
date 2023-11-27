@@ -3,6 +3,7 @@ import {
     Box,
 } from '@mui/material'
 import DataTable from '../../component/table'
+import { StyledTextField } from '../../component/textField'
 
 
 function Home() {
@@ -13,6 +14,12 @@ function Home() {
     return (
 
         <Box sx={{ padding: '20px' }}>
+            <StyledTextField
+                label='Buscar Produtos'
+                fullWidth
+                variant="outlined"
+                margin="normal"
+            />
             <DataTable dataHeader={dataHeader} dataBody={dataBody} />
         </Box>
 

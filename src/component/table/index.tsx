@@ -33,12 +33,13 @@ const DataTable = ({ dataHeader, dataBody }: DataProps) => {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {dataBody.map((item, index) => {
-                        return (<StyledTableCell key={index}>
-                            {item}
-                        </StyledTableCell>)
-                    })}
-
+                    <TableRow>
+                        {dataBody.map((item, index) => {
+                            return (<StyledTableCell key={index}>
+                                {item}
+                            </StyledTableCell>)
+                        })}
+                    </TableRow>
                 </TableBody>
             </Table>
         </TableContainer>
