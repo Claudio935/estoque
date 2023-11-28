@@ -1,9 +1,10 @@
 import React from 'react'
 import {
-    Box,
+    Stack,
 } from '@mui/material'
 import DataTable from '../../component/table'
 import { StyledTextField } from '../../component/textField'
+import { StyledButton } from '../../component/button'
 
 
 function Home() {
@@ -13,15 +14,18 @@ function Home() {
 
     return (
 
-        <Box sx={{ padding: '20px' }}>
-            <StyledTextField
-                label='Buscar Produtos'
-                fullWidth
-                variant="outlined"
-                margin="normal"
-            />
+        <Stack sx={{ padding: '20px' }} spacing={2} direction={'column'}>
+            <Stack direction={'row'} spacing={2}>
+                <StyledTextField
+                    label='Buscar Produtos'
+                    fullWidth
+                    variant="outlined"
+                    margin="normal"
+                />
+                <StyledButton>Pesquisar</StyledButton>
+            </Stack>
             <DataTable dataHeader={dataHeader} dataBody={dataBody} />
-        </Box>
+        </Stack>
 
     )
 }
