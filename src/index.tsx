@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Home from './page/home';
+
 import App from './App';
+import UpdateProduct from './page/updateProduct';
+import Home from './page/home';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +19,14 @@ const router = createBrowserRouter([
         element: <Home />,
         errorElement: <div>deu ruim</div>
       },
+      {
+        path: '/updateProduct',
+        element: <UpdateProduct />,
+        errorElement: <div>deu ruim</div>,
+      }
     ],
   },
+
 ]);
 
 

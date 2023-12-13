@@ -15,7 +15,7 @@ function App() {
 
 
   return (
-    <Box sx={{ padding: '80px 0px 80px 180px' }} >
+    <Box padding={'80px 0px 80px 180px'} >
       <NavBar />
       <Sidebar />
       <Outlet />

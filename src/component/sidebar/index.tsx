@@ -6,7 +6,7 @@ import {
     Toolbar,
     Typography,
 } from '@mui/material'
-import { Link } from 'react-router-dom';
+import { ListItemNavLink } from '../ListItemNavLink';
 
 
 
@@ -30,9 +30,8 @@ const Sidebar = () => {
                         sx={{ flexGrow: 1, fontWeight: 900, }} color={'white'}>Olá usuário!
                     </Typography>
                 </ListItem>
-                <ListItem>
-                    <Link to={'/'}>Home</Link>
-                </ListItem>
+                <ListItemNavLink to='/'>Home</ListItemNavLink>
+                <ListItemNavLink to='/updateProduct'>Produto</ListItemNavLink>
             </List>
         </Drawer>
 
